@@ -1,0 +1,147 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #172033;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 32px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px #0001;
+}
+
+.auth-card h1 {
+  margin-top: 0;
+}
+
+.auth-card label {
+  display: block;
+  margin: 18px 0 8px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.auth-card button,
+.dashboard header button {
+  padding: 12px 16px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.auth-card button[type="submit"] {
+  width: 100%;
+}
+
+.auth-card .switch-button {
+  background: transparent;
+  color: #2563eb;
+  margin-top: 8px;
+}
+
+.dashboard {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.dashboard header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.welcome-card {
+  padding: 28px;
+  margin-top: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px #0001;
+}
+
+.status-message {
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.profile-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.profile-form label {
+  font-weight: 600;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.profile-form button {
+  justify-self: start;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-form button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.auth-card .switch-button {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    margin: 16px auto;
+    padding: 16px;
+  }
+
+  .dashboard > header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .welcome-card,
+  .stat-card {
+    padding: 18px;
+  }
+}
